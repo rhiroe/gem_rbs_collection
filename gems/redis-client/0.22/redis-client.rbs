@@ -1,0 +1,4 @@
+class RedisClient
+  class Error < StandardError
+  end
+end 
