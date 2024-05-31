@@ -1,0 +1,14 @@
+class Trilogy
+  module Error
+    attr_reader error_code: String|nil
+  end
+
+  class BaseError < StandardError
+    include Error
+
+    def initialize: (?String? error_message, ?String? error_code) -> void
+  end
+
+  class BaseConnectionError < BaseError
+  end
+end
